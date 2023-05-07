@@ -7,7 +7,9 @@ from tkinter import *
 # #5e9dd1
 # #052f52
 
-
+rock = PhotoImage(file=r"paper.png")
+paper = PhotoImage(file=r"paper.png")
+scissors = PhotoImage(file=r"paper.png")
 
 root = Tk()
 root.geometry("1000x600")
