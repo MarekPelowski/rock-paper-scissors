@@ -27,6 +27,11 @@ selecting_frame.place(x=760, y=0)
 rock_button = Button(root, image=rock_image, borderwidth=0, bg="#79aed9")
 rock_button.place(x=800, y=15)
 
+paper_button = Button(root, image=paper_image, borderwidth=0, bg="#79aed9")
+paper_button.place(x=800, y=200)
+
+scissors_button = Button(root, image=scissors_image, borderwidth=0, bg="#79aed9")
+scissors_button.place(x=801, y=385)
 
 
 root.mainloop()
