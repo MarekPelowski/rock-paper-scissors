@@ -13,8 +13,8 @@ root.title("Rock Paper Scissors")
 root.resizable(0, 0)
 root.configure(bg="#4b81ad")
 
-choosing_panel_frame = Frame(root, bg="#79aed9", height=600, width=240)
-choosing_panel_frame.place(x=760, y=0)
+selecting_frame = Frame(root, bg="#79aed9", height=600, width=240)
+selecting_frame.place(x=760, y=0)
 
 
 
