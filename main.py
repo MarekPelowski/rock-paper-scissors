@@ -6,8 +6,8 @@ from tkinter import *
 # 4b81ad
 # #5e9dd1
 # #052f52
-
-
+# #4b6fad
+# #3f6a99
 
 root = Tk()
 root.geometry("1000x600")
@@ -23,6 +23,12 @@ scissors_image = PhotoImage(file=r"scissors.png")
 selecting_frame = Frame(root, bg="#79aed9", height=600, width=240)
 selecting_frame.place(x=760, y=0)
 
+player_frame = Frame(root, bg="#3f6a99", height=400, width=200)
+player_frame.place(x=25, y=100)
+
+enemy_frame = Frame(root, bg="#3f6a99", height=400, width=200)
+enemy_frame.place(x=525, y=100)
+
 
 rock_button = Button(root, image=rock_image, borderwidth=0, bg="#79aed9")
 rock_button.place(x=800, y=15)
@@ -32,6 +38,7 @@ paper_button.place(x=800, y=200)
 
 scissors_button = Button(root, image=scissors_image, borderwidth=0, bg="#79aed9")
 scissors_button.place(x=801, y=385)
+
 
 
 root.mainloop()
