@@ -18,6 +18,7 @@ root.configure(bg="#4b81ad")
 rock_image = PhotoImage(file=r"rock.png")
 paper_image = PhotoImage(file=r"paper.png")
 scissors_image = PhotoImage(file=r"scissors.png")
+player_image = PhotoImage(file=r"finger_pointing_at_you.png")
 
 
 selecting_frame = Frame(root, bg="#79aed9", height=600, width=240)
@@ -28,6 +29,10 @@ player_frame.place(x=25, y=100)
 
 enemy_frame = Frame(root, bg="#3f6a99", height=400, width=200)
 enemy_frame.place(x=525, y=100)
+
+
+player_avatar = Label(root, image=player_image, borderwidth=0, bg="#3f6a99")
+player_avatar.place(x=34, y=110)
 
 
 rock_button = Button(root, image=rock_image, borderwidth=0, bg="#79aed9")
