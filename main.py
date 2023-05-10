@@ -30,6 +30,13 @@ player_frame.place(x=25, y=100)
 enemy_frame = Frame(root, bg="#3f6a99", height=400, width=200)
 enemy_frame.place(x=525, y=100)
 
+text_frame = Frame(root, bg="#79aed9", height=60, width=760)
+text_frame.place(x=0, y=0)
+
+
+text_frame_text = Label(root, text="Rock Paper Scissors Game", bg="#79aed9", fg="black", font=("consolas", 20, "bold"))
+text_frame_text.place(x=200, y=10)
+
 
 player_avatar = Label(root, image=player_image, borderwidth=0, bg="#3f6a99")
 player_avatar.place(x=34, y=110)
