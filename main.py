@@ -36,7 +36,7 @@ text_frame.place(x=0, y=0)
 
 text_frame_text = Label(root, text="Rock Paper Scissors Game", bg="#3f6a99", fg="black", font=("consolas", 22, "bold"))
 text_frame_text.place(x=200, y=10)
-
+#a
 
 player_avatar = Label(root, image=player_image, borderwidth=0, bg="#3f6a99")
 player_avatar.place(x=34, y=110)

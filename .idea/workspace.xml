@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="41b337e1-f4cd-45cb-8510-e68b37132907" name="Changes" comment="made the colors look better">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PATH_TO_GIT" value="C:\Program Files\Git\cmd\git.exe" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2PHgYMSL1mdjyc2AFa2EN416wMO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/marek/PycharmProjects/rock-paper-scissors&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\marek\PycharmProjects\rock-paper-scissors" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="rock-paper-scissors" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\marek\PycharmProjects\0\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41b337e1-f4cd-45cb-8510-e68b37132907" name="Changes" comment="" />
+      <created>1683119467381</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683119467381</updated>
+    </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1683119619018</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683119619018</updated>
+    </task>
+    <task id="LOCAL-00002" summary="created first window">
+      <created>1683214746816</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683214746816</updated>
+    </task>
+    <task id="LOCAL-00003" summary="created README file">
+      <created>1683214799810</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683214799810</updated>
+    </task>
+    <task id="LOCAL-00004" summary="created the background">
+      <created>1683295240501</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683295240501</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fixed a detail">
+      <created>1683463033683</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683463033683</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added rock paper scissors icons files">
+      <created>1683463179544</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683463179544</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added rock paper scissors to the code">
+      <created>1683463352531</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683463352531</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added rock button">
+      <created>1683464107935</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683464107935</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added another paper and scissors buttons :O">
+      <created>1683464518158</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1683464518158</updated>
+    </task>
+    <task id="LOCAL-00010" summary="created two frames - player and enemy frame">
+      <created>1683730266917</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1683730266917</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added a finger pointing at you image">
+      <created>1683730558132</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1683730558132</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added a finger pointing at you image to the code">
+      <created>1683730857970</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1683730857970</updated>
+    </task>
+    <task id="LOCAL-00013" summary="added a text to the frame &quot;Rock Paper Scissors Game&quot;">
+      <created>1683731218746</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1683731218746</updated>
+    </task>
+    <task id="LOCAL-00014" summary="made the text look better">
+      <created>1683731282127</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1683731282127</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fixed something">
+      <created>1683731785532</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1683731785532</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fixup! made the text look better">
+      <created>1684181045132</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1684181045132</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fixed something again">
+      <created>1684579893927</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1684579893927</updated>
+    </task>
+    <task id="LOCAL-00018" summary="made the colors look better">
+      <created>1684581616197</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1684581616197</updated>
+    </task>
+    <task id="LOCAL-00019" summary="made the colors look better">
+      <created>1684582132765</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1684582132765</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <MESSAGE value="created first window" />
+    <MESSAGE value="created README file" />
+    <MESSAGE value="created the background" />
+    <MESSAGE value="fixed a detail" />
+    <MESSAGE value="added rock paper scissors icons files" />
+    <MESSAGE value="added rock paper scissors to the code" />
+    <MESSAGE value="added rock button" />
+    <MESSAGE value="added another paper and scissors buttons :O" />
+    <MESSAGE value="created two frames - player and enemy frame" />
+    <MESSAGE value="added a finger pointing at you image" />
+    <MESSAGE value="added a finger pointing at you image to the code" />
+    <MESSAGE value="added a text to the frame &quot;Rock Paper Scissors Game&quot;" />
+    <MESSAGE value="made the text look better" />
+    <MESSAGE value="fixed something" />
+    <MESSAGE value="fixup! made the text look better" />
+    <MESSAGE value="fixed something again" />
+    <MESSAGE value="made the colors look better" />
+    <option name="LAST_COMMIT_MESSAGE" value="made the colors look better" />
+  </component>
+</project>

@@ -1,0 +1,35 @@
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from tkinter import *\r\n\r\n# Colours used for the background:\r\n# #5188b5\r\n# #79aed9\r\n# 4b81ad\r\n# #5e9dd1\r\n# #052f52\r\n\r\nroot = Tk()\r\nroot.geometry(\"1000x600\")\r\nroot.title(\"Rock Paper Scissors\")\r\nroot.resizable(0, 0)\r\nroot.configure(bg=\"#4b81ad\")\r\n\r\nchoosing_panel_frame = Frame(root, bg=\"#79aed9\", height=600, width=240)\r\nchoosing_panel_frame.place(x=760, y=0)\r\n\r\n\r\n\r\n\r\nroot.mainloop()
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.py b/main.py
+--- a/main.py	(revision caa41be632f7f122e324faf022cad9de294ad5d7)
++++ b/main.py	(date 1683298662542)
+@@ -1,5 +1,7 @@
+ from tkinter import *
+ 
++
++
+ # Colours used for the background:
+ # #5188b5
+ # #79aed9
+@@ -18,5 +20,15 @@
+ 
+ 
+ 
++paper = PhotoImage(file=r"paper.png")
++
++
++paper_label = Label(image=paper)
++
++paper_image = Button(root, image=paper, borderwidth=0, bg="#79aed9")
++paper_image.place(x=800, y=5)
++
++
++
+ 
+ root.mainloop()
+\ No newline at end of file
