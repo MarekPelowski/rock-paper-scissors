@@ -1,0 +1,33 @@
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.py b/main.py
+--- a/main.py	
++++ b/main.py	
+@@ -1,5 +1,7 @@
+ from tkinter import *
+ 
++
++
+ # Colours used for the background:
+ # #5188b5
+ # #79aed9
+@@ -18,5 +20,15 @@
+ 
+ 
+ 
++paper = PhotoImage(file=r"paper.png")
++
++
++paper_label = Label(image=paper)
++
++paper_image = Button(root, image=paper, borderwidth=0, bg="#79aed9")
++paper_image.place(x=800, y=5)
++
++
++
+ 
+ root.mainloop()
+\ No newline at end of file

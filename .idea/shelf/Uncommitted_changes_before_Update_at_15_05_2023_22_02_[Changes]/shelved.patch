@@ -1,0 +1,108 @@
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from tkinter import *\r\n\r\n# Colours used for the background:\r\n# #5188b5\r\n# #79aed9\r\n# 4b81ad\r\n# #5e9dd1\r\n# #052f52\r\n# #4b6fad\r\n# #3f6a99\r\n\r\nroot = Tk()\r\nroot.geometry(\"1000x600\")\r\nroot.title(\"Rock Paper Scissors\")\r\nroot.resizable(0, 0)\r\nroot.configure(bg=\"#4b81ad\")\r\n\r\nrock_image = PhotoImage(file=r\"rock.png\")\r\npaper_image = PhotoImage(file=r\"paper.png\")\r\nscissors_image = PhotoImage(file=r\"scissors.png\")\r\nplayer_image = PhotoImage(file=r\"finger_pointing_at_you.png\")\r\n\r\n\r\nselecting_frame = Frame(root, bg=\"#79aed9\", height=600, width=240)\r\nselecting_frame.place(x=760, y=0)\r\n\r\nplayer_frame = Frame(root, bg=\"#3f6a99\", height=400, width=200)\r\nplayer_frame.place(x=25, y=100)\r\n\r\nenemy_frame = Frame(root, bg=\"#3f6a99\", height=400, width=200)\r\nenemy_frame.place(x=525, y=100)\r\n\r\ntext_frame = Frame(root, bg=\"#79aed9\", height=60, width=760)\r\ntext_frame.place(x=0, y=0)\r\n\r\n\r\ntext_frame_text = Label(root, text=\"Rock Paper Scissors Game\", bg=\"#79aed9\", fg=\"black\", font=(\"consolas\", 20, \"bold\"))\r\ntext_frame_text.place(x=200, y=10)\r\n\r\n\r\nplayer_avatar = Label(root, image=player_image, borderwidth=0, bg=\"#3f6a99\")\r\nplayer_avatar.place(x=34, y=110)\r\n\r\n\r\nrock_button = Button(root, image=rock_image, borderwidth=0, bg=\"#79aed9\")\r\nrock_button.place(x=800, y=15)\r\n\r\npaper_button = Button(root, image=paper_image, borderwidth=0, bg=\"#79aed9\")\r\npaper_button.place(x=800, y=200)\r\n\r\nscissors_button = Button(root, image=scissors_image, borderwidth=0, bg=\"#79aed9\")\r\nscissors_button.place(x=801, y=385)\r\n\r\n\r\n\r\nroot.mainloop()
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.py b/main.py
+--- a/main.py	(revision d22492b4a6aca2c1834dae93222c05667edc3d58)
++++ b/main.py	(date 1684161583732)
+@@ -36,7 +36,7 @@
+ 
+ text_frame_text = Label(root, text="Rock Paper Scissors Game", bg="#79aed9", fg="black", font=("consolas", 20, "bold"))
+ text_frame_text.place(x=200, y=10)
+-
++#a
+ 
+ player_avatar = Label(root, image=player_image, borderwidth=0, bg="#3f6a99")
+ player_avatar.place(x=34, y=110)
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1684180459640)
++++ b/.idea/vcs.xml	(date 1684180459640)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1684180845849)
++++ b/.idea/misc.xml	(date 1684180845849)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (rock-paper-scissors)" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+Index: .idea/inspectionProfiles/profiles_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+--- /dev/null	(date 1684180459668)
++++ b/.idea/inspectionProfiles/profiles_settings.xml	(date 1684180459668)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+Index: .idea/rock-paper-scissors.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/rock-paper-scissors.iml b/.idea/rock-paper-scissors.iml
+new file mode 100644
+--- /dev/null	(date 1684180845840)
++++ b/.idea/rock-paper-scissors.iml	(date 1684180845840)
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$">
++      <excludeFolder url="file://$MODULE_DIR$/venv" />
++    </content>
++    <orderEntry type="jdk" jdkName="Python 3.10 (rock-paper-scissors)" jdkType="Python SDK" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1684180459614)
++++ b/.idea/modules.xml	(date 1684180459614)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/rock-paper-scissors.iml" filepath="$PROJECT_DIR$/.idea/rock-paper-scissors.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
