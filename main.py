@@ -19,7 +19,7 @@ rock_image = PhotoImage(file=r"rock.png")
 paper_image = PhotoImage(file=r"paper.png")
 scissors_image = PhotoImage(file=r"scissors.png")
 player_image = PhotoImage(file=r"finger_pointing_at_you.png")
-enemy_image = PhotoImage(file=r"robot.jpg")
+enemy_image = PhotoImage(file=r"robot.png")
 
 
 selecting_frame = Frame(root, bg="#79aed9", height=600, width=240)
