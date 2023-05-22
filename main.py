@@ -43,7 +43,9 @@ player_avatar = Label(root, image=player_image, borderwidth=0, bg="#3f6a99")
 player_avatar.place(x=34, y=110)
 
 enemy_avatar = Label(root, image=enemy_image, borderwidth=0, bg="#3f6a99")
-enemy_avatar.place(x=200, y=110)
+enemy_avatar.place(x=535, y=110)
+
+
 
 
 rock_button = Button(root, image=rock_image, borderwidth=0, bg="#79aed9")
