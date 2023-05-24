@@ -45,7 +45,18 @@ player_avatar.place(x=34, y=110)
 enemy_avatar = Label(root, image=enemy_image, borderwidth=0, bg="#3f6a99")
 enemy_avatar.place(x=535, y=110)
 
+enemy_score = StringVar()
+enemy_score.set("0")
 
+enemy_score_label = Label(root, textvariable=enemy_score, font=("Calbri", 60, "bold"), bg="#3f6a99")
+enemy_score_label.place(x=600, y=350)
+
+
+player_score = StringVar()
+player_score.set("0")
+
+player_score_label = Label(root, textvariable=enemy_score, font=("Calbri", 60, "bold"), bg="#3f6a99")
+player_score_label.place(x=100, y=350)
 
 
 rock_button = Button(root, image=rock_image, borderwidth=0, bg="#79aed9")
