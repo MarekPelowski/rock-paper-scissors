@@ -66,37 +66,68 @@ def draw_one_round():
     player_frame.config(highlightbackground="orange", highlightthickness=4)
 
 def rock():
+    rock_winner = Label(root, image=rock_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
+    rock_winner.place(x=225, y=225)
+
 # draw
     if randint(1, 3) == 1:
         draw_one_round()
+        rock_winner = Label(root, image=rock_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
+        rock_winner.place(x=385, y=225)
 # lose
     elif randint(1, 3) == 2:
         lose_one_round()
+        paper_winner = Label(root, image=paper_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
+        paper_winner.place(x=385, y=225)
 # win
     elif randint(1, 3) == 3:
         win_one_round()
+        scissors_winner = Label(root, image=scissors_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
+        scissors_winner.place(x=385, y=225)
 
 def paper():
+    paper_winner = Label(root, image=paper_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
+    paper_winner.place(x=225, y=225)
+
 # win
     if randint(1, 3) == 1:
         win_one_round()
+        rock_winner = Label(root, image=rock_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
+        rock_winner.place(x=385, y=225)
+
 # draw
     elif randint(1, 3) == 2:
         draw_one_round()
+        paper_winner = Label(root, image=paper_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
+        paper_winner.place(x=385, y=225)
 # lose
     elif randint(1, 3) == 3:
         lose_one_round()
+        scissors_winner = Label(root, image=scissors_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
+        scissors_winner.place(x=385, y=225)
 
 def scissors():
+    scissors_winner = Label(root, image=scissors_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
+    scissors_winner.place(x=225, y=225)
+
 # lose
     if randint(1, 3) == 1:
         lose_one_round()
+        rock_winner = Label(root, image=rock_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
+        rock_winner.place(x=385, y=225)
+
 # win
     elif randint(1, 3) == 2:
         win_one_round()
+        paper_winner = Label(root, image=paper_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
+        paper_winner.place(x=385, y=225)
+
 # draw
     elif randint(1, 3) == 3:
         draw_one_round()
+        scissors_winner = Label(root, image=scissors_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
+        scissors_winner.place(x=385, y=225)
+
 
 selecting_frame = Frame(root, bg="#79aed9", height=600, width=240)
 selecting_frame.place(x=760, y=0)
