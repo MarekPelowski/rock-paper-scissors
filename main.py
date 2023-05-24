@@ -48,10 +48,14 @@ def lose_one_round():
     win_or_lose_label.configure(fg="red")
     win_or_lose.set("Enemy wins!")
 
+def draw_one_round():
+    win_or_lose_label.configure(fg="orange")
+    win_or_lose.set("It's a draw!")
+
 def rock():
 # draw
     if randint(1, 3) == 1:
-        pass
+        draw_one_round()
 # lose
     elif randint(1, 3) == 2:
         lose_one_round()
@@ -65,7 +69,7 @@ def paper():
         win_one_round()
 # draw
     elif randint(1, 3) == 2:
-        pass
+        draw_one_round()
 # lose
     elif randint(1, 3) == 3:
         lose_one_round()
@@ -79,7 +83,7 @@ def scissors():
         win_one_round()
 # draw
     elif randint(1, 3) == 3:
-        pass
+        draw_one_round()
 
 selecting_frame = Frame(root, bg="#79aed9", height=600, width=240)
 selecting_frame.place(x=760, y=0)
