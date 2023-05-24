@@ -40,6 +40,10 @@ def win_one_round():
 
     win_or_lose_label.configure(fg="lightgreen")
     win_or_lose.set("You win!")
+
+    player_frame.config(highlightbackground="green", highlightthickness=4)
+    enemy_frame.config(highlightbackground="red", highlightthickness=4)
+
 def lose_one_round():
     global enemy_score_value
     enemy_score_value = enemy_score_value + 1
@@ -48,9 +52,15 @@ def lose_one_round():
     win_or_lose_label.configure(fg="red")
     win_or_lose.set("Enemy wins!")
 
+    enemy_frame.config(highlightbackground="green", highlightthickness=4)
+    player_frame.config(highlightbackground="red", highlightthickness=4)
+
 def draw_one_round():
     win_or_lose_label.configure(fg="orange")
     win_or_lose.set("It's a draw!")
+
+    enemy_frame.config(highlightbackground="orange", highlightthickness=4)
+    player_frame.config(highlightbackground="orange", highlightthickness=4)
 
 def rock():
 # draw
