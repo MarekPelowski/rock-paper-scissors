@@ -1,4 +1,5 @@
 from tkinter import *
+from random import randint
 
 # Colours used for the background:
 # #5188b5
@@ -21,6 +22,56 @@ scissors_image = PhotoImage(file=r"scissors.png")
 player_image = PhotoImage(file=r"finger_pointing_at_you.png")
 enemy_image = PhotoImage(file=r"robot.png")
 
+enemy_score_value = 0
+enemy_score = StringVar()
+enemy_score.set(enemy_score_value)
+
+player_score_value = 0
+player_score = StringVar()
+player_score.set(player_score_value)
+
+def win_one_round():
+    global player_score_value
+    player_score_value = player_score_value + 1
+    player_score.set(player_score_value)
+
+def lose_one_round():
+    global enemy_score_value
+    enemy_score_value = enemy_score_value + 1
+    enemy_score.set(enemy_score_value)
+
+def rock():
+# draw
+    if randint(1, 3) == 1:
+        pass
+# lose
+    elif randint(1, 3) == 2:
+        lose_one_round()
+# win
+    elif randint(1, 3) == 3:
+        win_one_round()
+
+def paper():
+# win
+    if randint(1, 3) == 1:
+        win_one_round()
+# draw
+    elif randint(1, 3) == 2:
+        pass
+# lose
+    elif randint(1, 3) == 3:
+        lose_one_round()
+
+def scissors():
+# lose
+    if randint(1, 3) == 1:
+        lose_one_round()
+# win
+    elif randint(1, 3) == 2:
+        win_one_round()
+# draw
+    elif randint(1, 3) == 3:
+        pass
 
 selecting_frame = Frame(root, bg="#79aed9", height=600, width=240)
 selecting_frame.place(x=760, y=0)
@@ -45,27 +96,25 @@ player_avatar.place(x=34, y=110)
 enemy_avatar = Label(root, image=enemy_image, borderwidth=0, bg="#3f6a99")
 enemy_avatar.place(x=535, y=110)
 
-enemy_score = StringVar()
-enemy_score.set("0")
+
 
 enemy_score_label = Label(root, textvariable=enemy_score, font=("Calbri", 60, "bold"), bg="#3f6a99")
 enemy_score_label.place(x=600, y=350)
 
 
-player_score = StringVar()
-player_score.set("0")
 
-player_score_label = Label(root, textvariable=enemy_score, font=("Calbri", 60, "bold"), bg="#3f6a99")
+
+player_score_label = Label(root, textvariable=player_score, font=("Calbri", 60, "bold"), bg="#3f6a99")
 player_score_label.place(x=100, y=350)
 
 
-rock_button = Button(root, image=rock_image, borderwidth=0, bg="#79aed9")
+rock_button = Button(root, image=rock_image, borderwidth=0, bg="#79aed9", command=rock)
 rock_button.place(x=800, y=15)
 
-paper_button = Button(root, image=paper_image, borderwidth=0, bg="#79aed9")
+paper_button = Button(root, image=paper_image, borderwidth=0, bg="#79aed9", command=paper)
 paper_button.place(x=800, y=200)
 
-scissors_button = Button(root, image=scissors_image, borderwidth=0, bg="#79aed9")
+scissors_button = Button(root, image=scissors_image, borderwidth=0, bg="#79aed9", command=scissors)
 scissors_button.place(x=801, y=385)
 
 
