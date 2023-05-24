@@ -21,6 +21,9 @@ paper_image = PhotoImage(file=r"paper.png")
 scissors_image = PhotoImage(file=r"scissors.png")
 player_image = PhotoImage(file=r"finger_pointing_at_you.png")
 enemy_image = PhotoImage(file=r"robot.png")
+rock_winner_image = PhotoImage(file=r"rock_winner.png")
+paper_winner_image = PhotoImage(file=r"paper_winner.png")
+scissors_winner_image = PhotoImage(file=r"scissors_winner.png")
 
 
 win_or_lose = StringVar()
