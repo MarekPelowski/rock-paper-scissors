@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import messagebox
 from random import randint
 
 # Colours used for the background:
@@ -26,6 +27,7 @@ paper_winner_image = PhotoImage(file=r"paper_winner.png")
 scissors_winner_image = PhotoImage(file=r"scissors_winner.png")
 
 
+
 win_or_lose = StringVar()
 
 enemy_score_value = 0
@@ -35,6 +37,8 @@ enemy_score.set(enemy_score_value)
 player_score_value = 0
 player_score = StringVar()
 player_score.set(player_score_value)
+
+
 
 def win_one_round():
     global player_score_value
@@ -175,5 +179,9 @@ scissors_button.place(x=801, y=385)
 
 win_or_lose_label = Label(root, textvariable=win_or_lose, font=("consolas", 20), bg="#4b81ad", fg="black")
 win_or_lose_label.place(x=300, y=550)
+
+
+
+
 
 root.mainloop()
