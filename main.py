@@ -22,6 +22,9 @@ scissors_image = PhotoImage(file=r"scissors.png")
 player_image = PhotoImage(file=r"finger_pointing_at_you.png")
 enemy_image = PhotoImage(file=r"robot.png")
 
+
+win_or_lose = StringVar()
+
 enemy_score_value = 0
 enemy_score = StringVar()
 enemy_score.set(enemy_score_value)
@@ -35,10 +38,15 @@ def win_one_round():
     player_score_value = player_score_value + 1
     player_score.set(player_score_value)
 
+    win_or_lose_label.configure(fg="lightgreen")
+    win_or_lose.set("You win!")
 def lose_one_round():
     global enemy_score_value
     enemy_score_value = enemy_score_value + 1
     enemy_score.set(enemy_score_value)
+
+    win_or_lose_label.configure(fg="red")
+    win_or_lose.set("Enemy wins!")
 
 def rock():
 # draw
@@ -117,6 +125,7 @@ paper_button.place(x=800, y=200)
 scissors_button = Button(root, image=scissors_image, borderwidth=0, bg="#79aed9", command=scissors)
 scissors_button.place(x=801, y=385)
 
-
+win_or_lose_label = Label(root, textvariable=win_or_lose, font=("consolas", 20), bg="#4b81ad", fg="black")
+win_or_lose_label.place(x=300, y=550)
 
 root.mainloop()
