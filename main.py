@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 from random import randint
+import time
 
 # Colours used for the background:
 # #5188b5
@@ -80,6 +81,7 @@ def draw_one_round():
 def rock():
     rock_winner = Label(root, image=rock_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
     rock_winner.place(x=225, y=225)
+
     win()
     lose()
 
@@ -102,6 +104,8 @@ def rock():
 def paper():
     paper_winner = Label(root, image=paper_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
     paper_winner.place(x=225, y=225)
+
+
     win()
     lose()
 
@@ -125,23 +129,28 @@ def paper():
 def scissors():
     scissors_winner = Label(root, image=scissors_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
     scissors_winner.place(x=225, y=225)
+
+
     win()
     lose()
 
 # lose
     if randint(1, 3) == 1:
+
         lose_one_round()
         rock_winner = Label(root, image=rock_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
         rock_winner.place(x=385, y=225)
 
 # win
     elif randint(1, 3) == 2:
+
         win_one_round()
         paper_winner = Label(root, image=paper_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
         paper_winner.place(x=385, y=225)
 
 # draw
     elif randint(1, 3) == 3:
+
         draw_one_round()
         scissors_winner = Label(root, image=scissors_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
         scissors_winner.place(x=385, y=225)
