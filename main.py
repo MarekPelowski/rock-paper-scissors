@@ -38,7 +38,15 @@ player_score_value = 0
 player_score = StringVar()
 player_score.set(player_score_value)
 
+def win():
+    if player_score_value == 4:
+        messagebox.showinfo(title="You win!", message="Good Job!!")
+        root.destroy()
 
+def lose():
+    if enemy_score_value == 4:
+        messagebox.showinfo(title="Enemy wins!", message="...")
+        root.destroy()
 
 def win_one_round():
     global player_score_value
@@ -72,6 +80,8 @@ def draw_one_round():
 def rock():
     rock_winner = Label(root, image=rock_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
     rock_winner.place(x=225, y=225)
+    win()
+    lose()
 
 # draw
     if randint(1, 3) == 1:
@@ -92,6 +102,8 @@ def rock():
 def paper():
     paper_winner = Label(root, image=paper_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
     paper_winner.place(x=225, y=225)
+    win()
+    lose()
 
 # win
     if randint(1, 3) == 1:
@@ -113,6 +125,8 @@ def paper():
 def scissors():
     scissors_winner = Label(root, image=scissors_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
     scissors_winner.place(x=225, y=225)
+    win()
+    lose()
 
 # lose
     if randint(1, 3) == 1:
@@ -182,6 +196,5 @@ win_or_lose_label.place(x=300, y=550)
 
 
 
-
-
-root.mainloop()
+while player_score_value != 5:
+    root.mainloop()
