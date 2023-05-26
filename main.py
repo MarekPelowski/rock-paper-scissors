@@ -144,7 +144,6 @@ def scissors():
 
         lose_one_round()
         rock_winner = Label(root, image=rock_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
-        rock_winner.after(1000)
         rock_winner.place(x=385, y=225)
 
 
