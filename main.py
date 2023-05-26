@@ -39,6 +39,9 @@ player_score_value = 0
 player_score = StringVar()
 player_score.set(player_score_value)
 
+
+
+
 def win():
     if player_score_value == 4:
         messagebox.showinfo(title="You win!", message="Good Job!!")
@@ -46,7 +49,7 @@ def win():
 
 def lose():
     if enemy_score_value == 4:
-        messagebox.showinfo(title="Enemy wins!", message="...")
+        messagebox.showinfo(title="Enemy wins!", message="You lost...")
         root.destroy()
 
 def win_one_round():
@@ -127,8 +130,10 @@ def paper():
         scissors_winner.place(x=385, y=225)
 
 def scissors():
+
     scissors_winner = Label(root, image=scissors_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
     scissors_winner.place(x=225, y=225)
+
 
 
     win()
@@ -139,7 +144,10 @@ def scissors():
 
         lose_one_round()
         rock_winner = Label(root, image=rock_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
+        rock_winner.after(1000)
         rock_winner.place(x=385, y=225)
+
+
 
 # win
     elif randint(1, 3) == 2:
@@ -154,6 +162,8 @@ def scissors():
         draw_one_round()
         scissors_winner = Label(root, image=scissors_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
         scissors_winner.place(x=385, y=225)
+
+
 
 
 selecting_frame = Frame(root, bg="#79aed9", height=600, width=240)
