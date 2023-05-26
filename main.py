@@ -44,11 +44,15 @@ player_score.set(player_score_value)
 
 def win():
     if player_score_value == 4:
+        win_one_round()
+        lose_one_round()
         messagebox.showinfo(title="You win!", message="Good Job!!")
         root.destroy()
 
 def lose():
     if enemy_score_value == 4:
+        win_one_round()
+        lose_one_round()
         messagebox.showinfo(title="Enemy wins!", message="You lost...")
         root.destroy()
 
@@ -82,6 +86,9 @@ def draw_one_round():
     player_frame.config(highlightbackground="orange", highlightthickness=4)
 
 def rock():
+
+    random = randint(1, 3)
+
     rock_winner = Label(root, image=rock_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
     rock_winner.place(x=225, y=225)
 
@@ -89,22 +96,25 @@ def rock():
     lose()
 
 # draw
-    if randint(1, 3) == 1:
+    if random == 1:
         draw_one_round()
         rock_winner = Label(root, image=rock_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
         rock_winner.place(x=385, y=225)
 # lose
-    elif randint(1, 3) == 2:
+    elif random == 2:
         lose_one_round()
         paper_winner = Label(root, image=paper_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
         paper_winner.place(x=385, y=225)
 # win
-    elif randint(1, 3) == 3:
+    elif random == 3:
         win_one_round()
         scissors_winner = Label(root, image=scissors_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
         scissors_winner.place(x=385, y=225)
 
 def paper():
+
+    random = randint(1, 3)
+
     paper_winner = Label(root, image=paper_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
     paper_winner.place(x=225, y=225)
 
@@ -113,23 +123,26 @@ def paper():
     lose()
 
 # win
-    if randint(1, 3) == 1:
+    if random == 1:
         win_one_round()
         rock_winner = Label(root, image=rock_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
         rock_winner.place(x=385, y=225)
 
 # draw
-    elif randint(1, 3) == 2:
+    elif random == 2:
         draw_one_round()
         paper_winner = Label(root, image=paper_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
         paper_winner.place(x=385, y=225)
+
 # lose
-    elif randint(1, 3) == 3:
+    elif random == 3:
         lose_one_round()
         scissors_winner = Label(root, image=scissors_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
         scissors_winner.place(x=385, y=225)
 
 def scissors():
+
+    random = randint(1, 3)
 
     scissors_winner = Label(root, image=scissors_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
     scissors_winner.place(x=225, y=225)
@@ -140,7 +153,7 @@ def scissors():
     lose()
 
 # lose
-    if randint(1, 3) == 1:
+    if random == 1:
 
         lose_one_round()
         rock_winner = Label(root, image=rock_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
@@ -149,14 +162,14 @@ def scissors():
 
 
 # win
-    elif randint(1, 3) == 2:
+    elif random == 2:
 
         win_one_round()
         paper_winner = Label(root, image=paper_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
         paper_winner.place(x=385, y=225)
 
 # draw
-    elif randint(1, 3) == 3:
+    elif random == 3:
 
         draw_one_round()
         scissors_winner = Label(root, image=scissors_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
@@ -214,5 +227,4 @@ win_or_lose_label.place(x=300, y=550)
 
 
 
-while player_score_value != 5:
-    root.mainloop()
+root.mainloop()
