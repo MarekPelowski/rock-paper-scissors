@@ -139,11 +139,6 @@ def rock():
         tksleep(5)
         button_enable()
 
-    tksleep(3)
-
-
-
-
 
 
 def paper():
