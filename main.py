@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 from random import randint
-import time
+
 
 # Colours used for the background:
 # #5188b5
@@ -40,7 +40,24 @@ player_score = StringVar()
 player_score.set(player_score_value)
 
 
+def button_disable():
+    rock_button["state"] = DISABLED
+    paper_button["state"] = DISABLED
+    scissors_button["state"] = DISABLED
 
+def button_enable():
+    rock_button["state"] = NORMAL
+    paper_button["state"] = NORMAL
+    scissors_button["state"] = NORMAL
+
+def tksleep(t):
+    ms = int(t+1000)
+    var = IntVar(root)
+    root.after(ms, var.set, 1)
+    root.wait_variable(var)
+    '''
+    from the internet
+    '''
 
 def win():
     if player_score_value == 4:
@@ -98,18 +115,36 @@ def rock():
 # draw
     if random == 1:
         draw_one_round()
-        rock_winner = Label(root, image=rock_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
-        rock_winner.place(x=385, y=225)
+        rock_winner2 = Label(root, image=rock_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
+        rock_winner2.place(x=385, y=225)
+        button_disable()
+        tksleep(5)
+        button_enable()
+
 # lose
     elif random == 2:
         lose_one_round()
         paper_winner = Label(root, image=paper_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
         paper_winner.place(x=385, y=225)
+        button_disable()
+        tksleep(5)
+        button_enable()
+
 # win
     elif random == 3:
         win_one_round()
         scissors_winner = Label(root, image=scissors_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
         scissors_winner.place(x=385, y=225)
+        button_disable()
+        tksleep(5)
+        button_enable()
+
+    tksleep(3)
+
+
+
+
+
 
 def paper():
 
@@ -122,23 +157,37 @@ def paper():
     win()
     lose()
 
+
+
 # win
     if random == 1:
         win_one_round()
         rock_winner = Label(root, image=rock_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
         rock_winner.place(x=385, y=225)
+        button_disable()
+        tksleep(5)
+        button_enable()
+
 
 # draw
     elif random == 2:
         draw_one_round()
         paper_winner = Label(root, image=paper_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
         paper_winner.place(x=385, y=225)
+        button_disable()
+        tksleep(5)
+        button_enable()
+
 
 # lose
     elif random == 3:
         lose_one_round()
         scissors_winner = Label(root, image=scissors_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
         scissors_winner.place(x=385, y=225)
+        button_disable()
+        tksleep(5)
+        button_enable()
+
 
 def scissors():
 
@@ -158,6 +207,9 @@ def scissors():
         lose_one_round()
         rock_winner = Label(root, image=rock_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
         rock_winner.place(x=385, y=225)
+        button_disable()
+        tksleep(5)
+        button_enable()
 
 
 
@@ -167,6 +219,9 @@ def scissors():
         win_one_round()
         paper_winner = Label(root, image=paper_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
         paper_winner.place(x=385, y=225)
+        button_disable()
+        tksleep(5)
+        button_enable()
 
 # draw
     elif random == 3:
@@ -174,6 +229,9 @@ def scissors():
         draw_one_round()
         scissors_winner = Label(root, image=scissors_winner_image, bg="#4b81ad", borderwidth=0, fg="#4b81ad")
         scissors_winner.place(x=385, y=225)
+        button_disable()
+        tksleep(5)
+        button_enable()
 
 
 
@@ -224,7 +282,6 @@ scissors_button.place(x=801, y=385)
 
 win_or_lose_label = Label(root, textvariable=win_or_lose, font=("consolas", 20), bg="#4b81ad", fg="black")
 win_or_lose_label.place(x=300, y=550)
-
 
 
 root.mainloop()
