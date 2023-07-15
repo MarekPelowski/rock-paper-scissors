@@ -40,6 +40,9 @@ player_score_value = 0
 player_score = StringVar()
 player_score.set(player_score_value)
 
+def restart_program():
+    python = sys.executable
+    os.execl(python, python, *sys.argv)
 
 def button_disable():
     rock_button["state"] = DISABLED
