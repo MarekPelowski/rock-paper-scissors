@@ -1,8 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 from random import randint
-import os
-import sys
+
 
 # Colours used for the background:
 # #5188b5
@@ -40,33 +39,6 @@ player_score_value = 0
 player_score = StringVar()
 player_score.set(player_score_value)
 
-def destroy_all_widgets():
-    player_avatar.destroy()
-    enemy_avatar.destroy()
-    win_or_lose_label.destroy()
-    rock_button.destroy()
-    scissors_button.destroy()
-    paper_button.destroy()
-    rock_winner_image.destroy()
-    rock_winner_image.destroy()
-    rock_winner_image.destroy()
-def try_again():
-
-    destroy_all_widgets()
-
-    your_score1 = Label(root, text="Your score is: ", font=("Arial", 40, "bold"), bg="white", fg="black")
-    your_score1.place(x=30, y=30)
-
-    your_score2 = Label(root, text=score_number, font=("Arial", 40, "bold"), bg="white", fg="black")
-    your_score2.place(x=420, y=30)
-
-    try_again_button = Button(root, text="Try Again?", fg="black", font=("Arial", 25, "bold"), borderwidth=0, command=restart_program)
-    try_again_button.place(x=30, y=150)
-
-
-def restart_program():
-    python = sys.executable
-    os.execl(python, python, *sys.argv)
 
 def button_disable():
     rock_button["state"] = DISABLED
