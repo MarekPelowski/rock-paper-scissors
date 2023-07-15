@@ -1,7 +1,8 @@
 from tkinter import *
 from tkinter import messagebox
 from random import randint
-
+import os
+import sys
 
 # Colours used for the background:
 # #5188b5
